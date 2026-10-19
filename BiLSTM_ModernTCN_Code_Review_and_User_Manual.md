@@ -6,7 +6,7 @@ Reviewed files: [py_BiLSTM_std.py](py_BiLSTM_std.py), [py_modernTCN_std.py](py_m
 
 Code baseline: the two final training scripts at commit [`31988e9`](https://github.com/yangjunahn/lrf-sswu/commit/31988e994fe6d35e1308760700ecbd2e4f3ec647)
 
-Theory and previous experiments: `LRF-SSWU-CodeDocumentation.pdf` (provided separately)
+Theory and previous experiments: [LRF-SSWU-CodeDocumentation_Theory.pdf](LRF-SSWU-CodeDocumentation_Theory.pdf)
 
 Language: English | [Korean version](BiLSTM_ModernTCN_Code_Review_and_User_Manual-kor.md)
 
@@ -638,7 +638,7 @@ lrf-sswu/
 │   ├── condition_002.csv
 │   ├── ...
 │   └── Wave_condition_001.csv   # Waveform file excluded by the scripts
-└── LRF-SSWU-CodeDocumentation.pdf
+└── LRF-SSWU-CodeDocumentation_Theory.pdf
 ```
 
 ```csv
@@ -1006,7 +1006,7 @@ Real ship-data performance, CUDA execution and OOM recovery, full 40-trial searc
 
 ### 14.2 References
 
-1. `LRF-SSWU-CodeDocumentation.pdf` (provided separately): the primary reference for theory, architecture diagrams, shared training procedures, and previous results. Nine pages; Section 2 maps its sections/pages to the code.
+1. [LRF-SSWU-CodeDocumentation_Theory.pdf](LRF-SSWU-CodeDocumentation_Theory.pdf): the primary reference for theory, architecture diagrams, shared training procedures, and previous results. Nine pages; Section 2 maps its sections/pages to the code.
 2. [Reviewed BiLSTM source](https://github.com/yangjunahn/lrf-sswu/blob/31988e994fe6d35e1308760700ecbd2e4f3ec647/py_BiLSTM_std.py) and [reviewed ModernTCN source](https://github.com/yangjunahn/lrf-sswu/blob/31988e994fe6d35e1308760700ecbd2e4f3ec647/py_modernTCN_std.py): evidence for implementation behavior and review findings.
 3. [PyTorch LSTM API](https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html): bidirectional final states and Dropout between layers.
 4. [PyTorch installation guide](https://pytorch.org/get-started/locally/): selecting an installation for the operating system and CPU/GPU.

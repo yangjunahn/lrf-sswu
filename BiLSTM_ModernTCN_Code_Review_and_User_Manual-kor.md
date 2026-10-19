@@ -6,7 +6,7 @@
 
 분석 기준: Git 커밋 [`31988e9`](https://github.com/yangjunahn/lrf-sswu/commit/31988e994fe6d35e1308760700ecbd2e4f3ec647)의 두 최종 학습 코드
 
-이론·기존 실험의 기준 문서: `LRF-SSWU-CodeDocumentation.pdf` (별도 제공 자료)
+이론·기존 실험의 기준 문서: [LRF-SSWU-CodeDocumentation_Theory.pdf](LRF-SSWU-CodeDocumentation_Theory.pdf)
 
 이 보고서는 학생이 정리한 최종 코드를 읽고 실행할 수 있도록 작성한 한국어 해설서다. PDF의 이론 설명을 코드의 클래스·함수·텐서 크기와 연결하고, 실제 구현의 장점과 결함, 환경 준비부터 저장 모델 추론까지의 절차를 설명한다. 원문 PDF를 별도로 준비하고 2절의 절·페이지 대응표를 이용해 함께 읽는다. **학습 소스는 수정하지 않았으며, 개선 코드는 제안으로 표시한다.**
 
@@ -638,7 +638,7 @@ lrf-sswu/
 │   ├── condition_002.csv
 │   ├── ...
 │   └── Wave_condition_001.csv   # 코드가 제외하는 파형 파일
-└── LRF-SSWU-CodeDocumentation.pdf
+└── LRF-SSWU-CodeDocumentation_Theory.pdf
 ```
 
 ```csv
@@ -1004,7 +1004,7 @@ PDF §9의 탐색 best val MSE를 위 표의 test 성능 자리에 옮겨 적지
 
 ### 14.2 참고자료
 
-1. `LRF-SSWU-CodeDocumentation.pdf` (별도 제공 자료) — 이론, 구조도, 공통 학습 절차, 기존 실험 결과의 주 참조. 전체 9페이지. 위 2절에 절·페이지 대응표 제공.
+1. [LRF-SSWU-CodeDocumentation_Theory.pdf](LRF-SSWU-CodeDocumentation_Theory.pdf) — 이론, 구조도, 공통 학습 절차, 기존 실험 결과의 주 참조. 전체 9페이지. 위 2절에 절·페이지 대응표 제공.
 2. [BiLSTM 분석 대상 원본](https://github.com/yangjunahn/lrf-sswu/blob/31988e994fe6d35e1308760700ecbd2e4f3ec647/py_BiLSTM_std.py) 및 [ModernTCN 분석 대상 원본](https://github.com/yangjunahn/lrf-sswu/blob/31988e994fe6d35e1308760700ecbd2e4f3ec647/py_modernTCN_std.py) — 본 보고서의 코드 동작·리뷰 근거.
 3. [PyTorch LSTM API](https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html) — 양방향 최종 상태와 층 사이 Dropout의 의미 확인.
 4. [PyTorch 설치 안내](https://pytorch.org/get-started/locally/) — 운영체제·CPU/GPU에 맞는 설치 선택.
